@@ -1,0 +1,30 @@
+{
+    "name": "@sepal/job",
+    "version": "1.0.0",
+    "description": "",
+    "author": "",
+    "license": "ISC",
+    "main": "src/job.js",
+    "scripts": {
+        "test": "jest",
+        "testWatch": "jest --watchAll"
+    },
+    "dependencies": {
+        "@sepal/log": "git://github.com/lpaolini/sepal-log",
+        "@sepal/utils": "git://github.com/lpaolini/sepal-utils",
+        "lodash": "^4.17.21",
+        "rxjs": "^7.1.0",
+        "serialize-error": "^8.1.0",
+        "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+        "eslint": "^7.30.0",
+        "jest": "^27.0.6",
+        "jest-expect-message": "^1.0.2"
+    },
+    "jest": {
+        "setupFilesAfterEnv": [
+            "jest-expect-message"
+        ]
+    }
+}
